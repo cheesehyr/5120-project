@@ -1,0 +1,29 @@
+@import '../../colors.css';
+
+.footer {
+    padding: 2rem;
+    background-color: var(--light-text-color);
+    color: white;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin-bottom: 1rem;
+  }
+  
+  .footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .footer nav ul li a:hover {
+    text-decoration: underline;
+  }

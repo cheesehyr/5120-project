@@ -1,0 +1,20 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --background-color: #333;
+  --background-color-light: #f9f9f9;
+  --text-color: #333;
+  --light-text-color: #666;
+  --header-background-color: #444;
+  --footer-background-color: #333;
+  --button-text-color: white;
+  --button-background-color: #2b2b2b;
+  --uv-level-background: #f0f0f0;
+  --low-pill: #68BE4C;
+  --moderate-pill: #FCBD24;
+  --high-pill: #F56B33;
+  --very-high-pill: #eb184a;
+  --uv-tile-bg: #ffeb3b;
+  --logo-green :#90de25;
+  --logo-blue: #b8f1e8;
+}

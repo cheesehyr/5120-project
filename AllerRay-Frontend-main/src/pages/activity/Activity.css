@@ -1,0 +1,177 @@
+.page-background {
+  background-color: #e0f0ff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.title-section {
+  position: relative;
+  color: #000;
+  padding: 40px 0;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.title-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.title-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.title-content p {
+  max-width: 800px;
+  margin: 1rem auto 0;
+}
+
+.section-heading {
+  color: #004085;
+  margin-bottom: 20px;
+}
+
+.custom-card {
+  height: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-color: #b3d7ff;
+  color: #000;
+}
+
+.custom-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: #004085;
+}
+
+.custom-card .card-text {
+  text-align: center;
+}
+
+.activity-container {
+  font-family: Arial, sans-serif;
+}
+
+.activity-description {
+  color: #666;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  max-width: 800px;
+}
+
+.activity-error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  flex-grow: 1;
+  display: flex;
+}
+
+.input-group .form-control {
+  flex-grow: 1;
+}
+
+.btn-primary {
+  margin-left: 10px;
+  background-color: #004085;
+  border-color: #004085;
+}
+
+.btn-primary:hover {
+  background-color: #002752;
+  border-color: #002752;
+}
+
+.radius-selector {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.radio-label {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-label input {
+  margin-right: 5px;
+}
+
+.map-filter-container {
+  display: flex;
+  height: 600px;
+  background-color: #fff;
+  border: 1px solid #b3d7ff;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.map-container {
+  flex: 2;
+}
+
+.filter-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f8ff;
+  overflow-y: auto;
+}
+
+.filter-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #004085;
+}
+
+.place-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #004085;
+}
+
+.place-info {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #b3d7ff;
+  border-radius: 4px;
+}

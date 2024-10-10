@@ -1,0 +1,6 @@
+.uv-precautions {
+  display: flex;
+  max-width: calc(100% - 50px);
+  justify-content: center;
+  align-items: center;
+}

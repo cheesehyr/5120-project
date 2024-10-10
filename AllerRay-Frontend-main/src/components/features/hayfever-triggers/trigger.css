@@ -1,0 +1,106 @@
+.hayfever-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.triggers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #e0f0ff;
+}
+
+.trigger-card {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: var(--background-color-light);
+  color: var(--background-color-dark);
+  margin: 0 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trigger-card.reduced-opacity {
+  opacity: 0.5;
+}
+
+.trigger-icon {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
+.trigger-label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+
+.description-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.minimisation-tips-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.minimisation-tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.minimisation-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--background-color-light);
+  color: var(--background-color-dark);
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minimisation-icon {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
+.minimisation-description {
+  margin-top: 0.5rem;
+  font-size: 12px;
+  width: 100%;
+}
+
+.minimisation-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.minimisation-description li {
+  margin-bottom: 5px;
+}

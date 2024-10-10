@@ -1,0 +1,32 @@
+/* recommendationImages.css */
+.emoji-container {
+  width: 350px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.emoji-img {
+  height: 60px;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 4px;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.popup {
+  animation: popup 0.4s ease-in-out;
+}

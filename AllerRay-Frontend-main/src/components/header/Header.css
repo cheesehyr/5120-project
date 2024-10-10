@@ -1,0 +1,77 @@
+@import '../../colors.css';
+
+.navbar {
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+  width: auto;
+  max-height: none;
+}
+
+.website-title {
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* Navigation link styles */
+.nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  margin: 0 0.25rem;
+  border-radius: 4px;
+}
+
+/* Hover effect for nav links */
+.nav-link:hover {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding-top: 1rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+    margin: 0.25rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .website-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+  }
+
+  .website-title {
+    font-size: 1.3rem;
+  }
+}

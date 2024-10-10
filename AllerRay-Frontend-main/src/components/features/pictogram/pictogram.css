@@ -1,0 +1,36 @@
+.pictogram-chart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    font-size: 38px; /* Adjust size as needed */
+    color: #cccccc; /* Default color */
+    transition: color 0.3s ease;
+  }
+  
+  .icon.highlighted {
+    color: #ff7700c3; /* Highlighted color */
+  }
+  
+  .card-hidden {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Gradual transition over 1 second */
+  }
+  
+  .card-visible {
+    opacity: 1;
+    transition: opacity 1s ease-in-out; /* Gradual transition over 1 second */
+  }
+
+  .custom-card-bg {
+    background-color: #cccccc2c !important; /* Adding !important to ensure it overrides other styles */
+  }
+  
+  .custom-background {
+    background-color: #98ff98;
+    padding: 20px; /* Optional: Add some padding */
+  }

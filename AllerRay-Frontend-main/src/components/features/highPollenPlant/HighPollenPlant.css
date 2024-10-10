@@ -1,0 +1,136 @@
+/* General layout for gallery */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px; /* Limits the gallery width for better structure */
+}
+
+/* Styling for category panels */
+.category-panel {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc; /* Separates categories visually */
+}
+
+/* Category title styling */
+.category-title {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Fixed height for consistent appearance */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(99, 95, 95, 0.5); /* Text contrast */
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.category-title:hover {
+    opacity: 0.8; /* Hover effect for interaction */
+}
+
+/* Detail section styling */
+.details {
+    display: none; /* Initially hidden */
+    flex-direction: row; /* Change to row for side by side */
+    flex-wrap: wrap; /* Allow multiple rows as needed */
+    align-items: flex-start; /* Align items at the start of the detail section */
+    width: 100%; /* Take full width to accommodate side by side layout */
+    padding: 20px;
+    gap: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    overflow: auto; /* Allows scrolling */
+}
+
+.category-panel.open .details {
+    display: flex; /* Show details when category is clicked */
+}
+.plant-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d; /* Allows 3D transform */
+}
+
+.plant.is-flipped .plant-inner {
+    transform: rotateY(180deg); /* Flip effect */
+}
+
+.plant-front, .plant-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back side of the flip during rotation */
+}
+
+.plant-back {
+    background-color: #f9f9f9;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box; /* Includes padding and border in width and height */
+}
+
+
+/* Styling for each plant entry */
+.plant {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    width: 250px; /* Width of each plant card */
+    height: 480px; /* Height adjusts to content */
+    display: flex;
+    flex-direction: column; /* Ensures vertical layout */
+    overflow: hidden; /* Hides any overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.plant img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .category-panel {
+        flex-direction: column;
+    }
+
+    .category-title, .details {
+        width: 100%;
+    }
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .dialog-image {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  

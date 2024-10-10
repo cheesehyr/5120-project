@@ -1,0 +1,5 @@
+/* Center the title and add a margin below */
+.chart-title {
+    text-align: center;
+    margin-bottom: 60px; /* Adjust the value as needed */
+}

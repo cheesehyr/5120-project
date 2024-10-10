@@ -1,0 +1,17 @@
+.emoji-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .emoji {
+    font-size: 2rem;
+  }
+  
+  .emoji-img {
+    height: 60px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    padding: 4px;
+  }

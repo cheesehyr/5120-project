@@ -1,0 +1,63 @@
+@import "../../../colors.css";
+
+.uv-tile {
+  width: 200px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.uv-tile:hover {
+  width: 60%;
+  z-index: 11;
+  height: 300px;
+}
+
+.uv-tile .front,
+.uv-tile .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.uv-tile .front h2,
+.uv-tile .front p {
+  color: white;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.uv-tile .back {
+  background-color: white;
+  transform: rotateY(180deg);
+  color: black;
+}
+
+.uv-tile.flipped .front {
+  transform: rotateY(180deg);
+}
+
+.uv-tile.flipped .back {
+  transform: rotateY(0deg);
+}
+
+li,
+ul {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+h3 {
+  margin: 0;
+}

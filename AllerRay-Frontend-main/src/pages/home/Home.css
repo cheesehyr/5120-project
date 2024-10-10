@@ -1,0 +1,187 @@
+@import '../../colors.css';
+
+/* Set the background color for the entire body */
+body {
+  background-color: #e0f0ff;
+}
+
+/* Hero Section Styling */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-color: #e0f0ff; /* Fallback background color */
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 0; /* Remove extra space */
+  position: relative; /* Allow stacking with pseudo-element */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Pseudo-element for Background Image */
+.hero::before {
+  content: '';
+  position: absolute; /* Positioned absolutely within .hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/home-background.jpg'); /* Background image */
+  background-size: 100% 150%;
+  background-position: center;
+  filter: saturate(80%) blur(4px); /* Lower saturation and add blur */
+  z-index: 0; /* Place behind the text */
+}
+
+/* Ensure Text Content Stays on Top */
+.hero h1,
+.hero p,
+.crazy-button {
+  position: relative;
+  z-index: 1; /* Ensure text and buttons appear above the background */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  /*text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);*/
+  margin-bottom: 2rem;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  /*text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);*/
+  margin-bottom: 2rem;
+}
+
+.crazy-button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.crazy-button:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.steps-section {
+  margin-top: -50px;
+  padding-top: 20px; /* Add padding to create space between hero and steps */
+  padding-bottom: 40px;
+  background-color: #e0f0ff; /* Match the body background color */
+}
+
+/* Steps Title Styling */
+.steps-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 0;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 110px;
+}
+
+.steps-title .underline {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #4caf50; /* This will match the text color */
+}
+/*
+.steps-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: #4caf50;
+  margin: 10px auto 0 auto;
+}
+*/
+
+/* Steps Container */
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Step Card Styling */
+.step-card {
+  background-color: #ffffff;
+  border: none;
+  padding: 30px;
+  width: 22%;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  overflow: hidden;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.step-icon {
+  font-size: 3rem;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.step-card h3 {
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.step-card p strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .steps-title {
+    font-size: 2rem;
+  }
+}
