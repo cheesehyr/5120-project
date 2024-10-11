@@ -28,13 +28,13 @@ config = {
 }
 
 # Google Map API set up
-POLLEN_API_KEY = 'AIzaSyBtF8rsCbFuAyQiP9hbzGTDVDAv4LgccXk'
+
 POLLEN_BASE_URL = 'https://pollen.googleapis.com/v1/forecast:lookup'
 MEL_LATITUDE = '-37.8142176'
 MEL_LONGITUDE = '144.9631608'
 
 # Open Weather API set up
-UV_API_KEY = '402dff3ecf831d612ec4e3a932047de2'
+
 UV_BASE_URL = 'https://api.openweathermap.org/data/3.0/onecall'
 
 # High Pollen Plants
@@ -320,7 +320,7 @@ def identify_plant():
                 files = {'images': (filename, image_file)}
                 data = {'organs': 'auto'}
                 params = {
-                    'api-key': '2b101dW5R3vNvdXetc3QkGCSu'
+                    'api-key': 'api-key'
                 }
 
                 response = requests.post(
@@ -351,11 +351,4 @@ def identify_plant():
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
 
-"""
-Melbourne:
-"lat": -37.8142176,
-"lon": 144.9631608,
-https://api.openweathermap.org/data/3.0/onecall?lat=-37.8142176&lon=144.9631608&exclude=minutely,hourly,daily,alerts&appid=402dff3ecf831d612ec4e3a932047de2
-https://pollen.googleapis.com/v1/forecast:lookup?key=AIzaSyBtF8rsCbFuAyQiP9hbzGTDVDAv4LgccXk
-https://pollen.googleapis.com/v1/forecast:lookup?key=AIzaSyBtF8rsCbFuAyQiP9hbzGTDVDAv4LgccXk&location.longitude=144.96&location.latitude=-37.81&days=1
-"""
+

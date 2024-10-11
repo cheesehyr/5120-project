@@ -54,7 +54,7 @@ class PollenMapType {
     const mapType = "TREE_UPI"; 
     const x = normalizedCoord.x;
     const y = normalizedCoord.y;
-    const key = "AIzaSyAZMfIP7tO1KU-ejwIQ55D4FVnsm1KFQjo"; 
+    const key = "Map-Key"; 
     img.style.opacity = this.visible ? 0.8 : 0;
     img.style.transition = 'opacity 0.3s';
     const src = `https://pollen.googleapis.com/v1/mapTypes/${mapType}/heatmapTiles/${zoom}/${x}/${y}?key=${key}`;
@@ -123,7 +123,7 @@ function Activity() {
   }
 
   const script = document.createElement('script');
-  script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAZMfIP7tO1KU-ejwIQ55D4FVnsm1KFQjo&libraries=places`;
+  script.src = `https://maps.googleapis.com/maps/api/js?key=map-key`;
   script.async = true;
   script.defer = true;
   script.addEventListener('load', () => setIsMapReady(true));
